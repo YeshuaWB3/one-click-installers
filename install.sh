@@ -101,7 +101,7 @@ fi
 if [ "$gpuchoice" == "B" ]; then
     pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/rocm5.2
 fi
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt --upgrade
 python -m pip install -r extensions/google_translate/requirements.txt
 python -m pip install -r extensions/silero_tts/requirements.txt
 
