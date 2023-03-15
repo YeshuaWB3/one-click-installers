@@ -19,13 +19,13 @@ gpuchoice=${gpuchoice:0:1}
 gpuchoice=${gpuchoice^^}
 
 if [ "$gpuchoice" == "A" ]; then
-    PACKAGES_TO_INSTALL="torchvision torchaudio pytorch-cuda=11.7 conda git"
+    PACKAGES_TO_INSTALL="torchvision=0.14.1 torchaudio=0.13.1 pytorch-cuda=11.7 conda git"
     CHANNEL="-c nvidia"
 elif [ "$gpuchoice" == "B" ]; then
     PACKAGES_TO_INSTALL="conda git"
     CHANNEL=""
 elif [ "$gpuchoice" == "C" ]; then
-    PACKAGES_TO_INSTALL="torchvision torchaudio pytorch conda git"
+    PACKAGES_TO_INSTALL="torchvision=0.14.1 torchaudio=0.13.1 pytorch conda git"
     CHANNEL=""
 else
     echo "Invalid choice. Exiting..."
