@@ -99,7 +99,7 @@ fi
 
 # AMD installation
 if [ "$gpuchoice" == "B" ]; then
-    pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/rocm5.2
+    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.4.2
 fi
 python -m pip install -r requirements.txt --upgrade
 python -m pip install -r extensions/google_translate/requirements.txt
